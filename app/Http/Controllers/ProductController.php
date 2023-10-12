@@ -44,7 +44,7 @@ class ProductController extends Controller
     public function show(Product $product) : View
     {
         return view('products.show', [
-            'product' => $products
+            'product' => $product
         ]);
     }
 
@@ -54,7 +54,7 @@ class ProductController extends Controller
     public function edit(Product $product) : View
     {
         return view('products.edit', [
-            'products' => $product
+            'product' => $product
         ]);
     }
 
